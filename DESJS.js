@@ -1,5 +1,7 @@
+//line 3 and 34 for key and plain text
 function DESencrypt() {
         //1- key generation steps:
+        let key = "Your key"
         let keyword = key.value;
         var Extendedkey = new Array(keyword.length);
         for (var i = 0; i < keyword.length; i++) {
@@ -29,6 +31,8 @@ function DESencrypt() {
         
         //================================================================
         //2- to split plaintxt into 2 parts:
+        let plain = "Your plain text"
+       
         let DESplain = plain.value;
         let Extendedplain = new Array(DESplain.length);
         for (let i = 0; i < DESplain.length; i++) {
